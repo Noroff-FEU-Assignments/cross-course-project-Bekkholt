@@ -1,0 +1,53 @@
+html {
+    background: url(../images/alex-avalos-dnUNjIUCg5c-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode:soft-light;
+    background-color: #ddddc5;
+    min-height: 100%;
+}
+
+ul {
+    display: flex;
+}
+
+form {
+    padding: 100px;
+    color: black;
+}
+
+.hobbs, .godzilla, .batman,
+.toy-story, .addams, .sweetheart, .hollywood, .scream, .director_photo {
+    max-width: 100px;
+    float: left;
+    margin: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.halloween, .girls {
+    border-radius: 30px;
+    float: left;
+    margin: 40px;
+    max-width: 200px;
+    justify-content: space-around;
+}
+
+.cta {
+    background-color: #611428;
+    color: #ddddc5;
+    padding: 5px 15px 5px 15px;
+    border-radius: 50px;
+    position: relative;
+    display: inline-block;
+}
+
+.logo {
+    max-width: 150px;
+}
+
+ul {
+    list-style: none;
+    justify-content: space-around;
+    align-content: flex-end;
+}

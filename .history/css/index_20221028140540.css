@@ -1,0 +1,19 @@
+html {
+    background-color: #ddddc5;
+    background-position: cover;
+}
+
+.halloween, .girls, .hobbs, .godzilla, .batman,
+.toy-story, .addams, .sweetheart, .hollywood, .scream, .director_photo {
+    max-width: 100px;
+}
+
+.cta {
+    background-color: #611428;
+    color: #ddddc5;
+    padding: 5px 15px 5px 15px;
+}
+
+.logo {
+    max-width: 150px;
+}
