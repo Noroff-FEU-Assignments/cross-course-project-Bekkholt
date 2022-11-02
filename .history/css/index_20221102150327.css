@@ -12,7 +12,6 @@ h1, h2 {
     font: bold;
     font-size: large;
     text-align: center;
-    font-weight: bold;
 }
 
 p {
@@ -80,21 +79,12 @@ input[type=text] [type=email] {
 }
 
 ul a {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding-left: 0%;
     font-family: 'DM Sans', sans-serif;
     color: #000000;
-    text-decoration: none;
-}
-
-ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 0%;
-}
-
-.active {
-    font-weight: bold;
 }
 
 .allproducts {

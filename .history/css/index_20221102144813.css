@@ -12,7 +12,6 @@ h1, h2 {
     font: bold;
     font-size: large;
     text-align: center;
-    font-weight: bold;
 }
 
 p {
@@ -48,15 +47,12 @@ input[type=text] [type=email] {
     justify-content: space-around;
 }
 
-.price {
-    padding-top: 0px;
-    padding-bottom: 10px;
-}
-
 .hobbs, .godzilla, .batman,
 .toy-story, .addams, .sweetheart, .hollywood, .scream, .director_photo {
     max-width: 100px;
     margin: 0px;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .collections {
@@ -72,6 +68,7 @@ input[type=text] [type=email] {
     border-radius: 50px;
     max-width: 100px;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 .logo {
@@ -79,22 +76,11 @@ input[type=text] [type=email] {
     padding: 0px;
 }
 
-ul a {
-    font-family: 'DM Sans', sans-serif;
-    color: #000000;
-    text-decoration: none;
-}
-
 ul {
-    list-style: none;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 0%;
-}
-
-.active {
-    font-weight: bold;
+    list-style: none;
+    justify-content: space-around;
+    padding-left: 0%;
 }
 
 .allproducts {
@@ -121,10 +107,6 @@ ul {
     padding-top: 5px;
 }
 
-.index {
-    text-align: left;
-}
+footer {
 
-.continue {
-    text-align: center;
 }
