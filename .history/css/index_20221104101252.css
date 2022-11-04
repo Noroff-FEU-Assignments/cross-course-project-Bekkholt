@@ -108,7 +108,7 @@ ul {
     padding: 0%;
 }
 
-.active, .bold {
+.active {
     font-weight: bold;
 }
 
@@ -189,4 +189,8 @@ input, textarea  {
 .product_text {
     margin-top: 1px;
     margin-bottom: 1px;
+}
+
+.bold {
+    font: bold;
 }

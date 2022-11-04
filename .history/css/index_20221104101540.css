@@ -104,11 +104,11 @@ ul {
     list-style: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-evenly flex-end;
     padding: 0%;
 }
 
-.active, .bold {
+.active {
     font-weight: bold;
 }
 

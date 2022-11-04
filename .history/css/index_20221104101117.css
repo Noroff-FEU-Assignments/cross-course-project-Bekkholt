@@ -105,10 +105,11 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-content: center flex-end;
     padding: 0%;
 }
 
-.active, .bold {
+.active {
     font-weight: bold;
 }
 

@@ -79,7 +79,7 @@ padding: 20px;
 .long {
     align-self: center;
     width: 200px;
-    margin: 5px;
+    margin: 5pxS;
 }
 
 .back {
@@ -108,7 +108,7 @@ ul {
     padding: 0%;
 }
 
-.active, .bold {
+.active {
     font-weight: bold;
 }
 

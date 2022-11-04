@@ -108,7 +108,7 @@ ul {
     padding: 0%;
 }
 
-.active, .bold {
+.active .bold {
     font-weight: bold;
 }
 

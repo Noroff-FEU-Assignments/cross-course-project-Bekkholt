@@ -106,9 +106,10 @@ ul {
     flex-direction: row;
     justify-content: space-evenly;
     padding: 0%;
+    justify-self: flex-end;
 }
 
-.active, .bold {
+.active {
     font-weight: bold;
 }
 

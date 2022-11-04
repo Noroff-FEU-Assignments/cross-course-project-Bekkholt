@@ -108,7 +108,7 @@ ul {
     padding: 0%;
 }
 
-.active, .bold {
+.active {
     font-weight: bold;
 }
 
@@ -123,6 +123,7 @@ ul {
     padding: 95px;
     padding-top: 20px;
     padding-bottom: 20px;
+    box-shadow: 2px 2px 2px #9c9999;
 }
 
 .checkmark {
