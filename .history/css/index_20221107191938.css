@@ -48,7 +48,7 @@ padding: 20px;
 
 .price {
     padding-top: 0px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 }
 
 .hobbs, .godzilla, .batman,
@@ -84,10 +84,6 @@ padding: 20px;
     align-self: center;
     width: 200px;
     margin: 5px;
-}
-
-nav {
-    margin-top: 50px;
 }
 
 .back {
@@ -134,7 +130,7 @@ ul {
 }
 
 .checkmark {
-    height: 70px;
+    padding-left: 155px;
 }
 
 .checkout_buttons {
@@ -144,16 +140,10 @@ ul {
     padding-top: 5px;
 }
 
-.items {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .index {
     text-align: left;
     padding-left: 15px;
-    margin: 5px 0;
+    margin-bottom: 5px;
 }
 
 .continue {
@@ -273,10 +263,10 @@ input, textarea  {
     .addams__specific {
         margin: 0px 100px;
     }
-/*     
+    
     .checkmark {
         padding-left: 400px;
-    } */
+    }
 
     .small_form {
         display: flex;
@@ -326,6 +316,16 @@ input, textarea  {
 
     .addams__specific {
         margin: 0px 380px;
+    }
+    
+    .checkmark {
+        padding-left: 700px;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 600px 10px 600px;
     }
     
     .small_form {

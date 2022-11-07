@@ -328,6 +328,16 @@ input, textarea  {
         margin: 0px 380px;
     }
     
+    /* .checkmark {
+        padding-left: 700px;
+    } */
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 600px 10px 600px;
+    }
+    
     .small_form {
         display: flex;
         justify-content: center space-evenly;
