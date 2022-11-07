@@ -70,14 +70,10 @@ padding: 20px;
     font-family: 'Lora', serif;
     border-radius: 50px;
     width: 100px;
+    height: 35px;
     text-decoration: none;
     text-align: center;
     box-shadow: 2px 2px 2px #9c9999;
-}
-
-.cta_tall {
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 .long {

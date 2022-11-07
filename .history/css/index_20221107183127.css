@@ -70,14 +70,10 @@ padding: 20px;
     font-family: 'Lora', serif;
     border-radius: 50px;
     width: 100px;
+    height: 35px;
     text-decoration: none;
     text-align: center;
     box-shadow: 2px 2px 2px #9c9999;
-}
-
-.cta_tall {
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 .long {
@@ -162,48 +158,26 @@ ul {
 
 input, textarea  {
     margin-bottom: 5px;
-    border-radius: 20px;
+    border-radius: 15px;
     background-color: #ddddc5;
     box-shadow: 2px 2px 2px #9c9999;
     border: none;
     height: 25px;
 }
 
-.checkout_form {
-    margin-bottom: 15px;
-}
-
 .contact_form {
-    padding: 10px;
-}
-
-.contact_form_space {
-    margin-bottom: 30px;
+    padding: 5px;
+    margin: 20px 0;
 }
 
 .message {
     height: 60px;
-    padding: 10px;
-}
-
-.submit_form_space {
-    padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 60px;
 }
 
 .small_form {
     display: flex;
     justify-content: center space-evenly;
     width: 98px;
-}
-
-.small_form_left {
-    margin-right: 2px;
-}
-
-.small_form_right {
-    margin-left: 2px;
 }
 
 .paypal {
