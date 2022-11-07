@@ -261,10 +261,6 @@ input, textarea  {
     margin-bottom: 1px;
 }
 
-.hide_small{
-    display: none;
-}
-
 @media (min-width: 600px) and (max-width: 999px) {
 
     .addams__specific {
@@ -298,16 +294,12 @@ input, textarea  {
     max-width: 150px;
     margin: 0px;
     box-shadow: 2px 2px 2px #9c9999;
-    }
+}
 
     .logo {
     max-width: 200px;
     padding: 0px;
-    }
-
-    .hide_small {
-        display: flex;
-    }
+}
 
 }
 
@@ -337,9 +329,5 @@ input, textarea  {
     max-width: 200px;
     margin: 0px;
     box-shadow: 2px 2px 2px #9c9999;
-    }
-    
-    .hide_small {
-        display: flex;
-    }
+}
 }

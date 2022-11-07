@@ -19,7 +19,6 @@ p {
     font-family: 'DM Sans', sans-serif;
     color: #000000;
     text-align: left;
-    padding: 0 60px;
 }
 
 .index {
@@ -153,7 +152,7 @@ ul {
 .index {
     text-align: left;
     padding-left: 15px;
-    margin: 5px 0px;
+    margin: 5px 0;
 }
 
 .continue {
@@ -242,13 +241,13 @@ input, textarea  {
     text-decoration: none;
     margin: auto;
     width: fit-content;
-    padding: 5px 0px;
+    padding: 5px 0;
 }
 
 .paypal_button_text {
     text-align: center;
-    margin: 0px 30px;
-    padding: 0px;
+    margin: 0 30px;
+    padding: 0;
 }
 
 .paypal_button_logo {
@@ -259,10 +258,6 @@ input, textarea  {
 .product_text {
     margin-top: 1px;
     margin-bottom: 1px;
-}
-
-.hide_small{
-    display: none;
 }
 
 @media (min-width: 600px) and (max-width: 999px) {
@@ -298,16 +293,12 @@ input, textarea  {
     max-width: 150px;
     margin: 0px;
     box-shadow: 2px 2px 2px #9c9999;
-    }
+}
 
     .logo {
     max-width: 200px;
     padding: 0px;
-    }
-
-    .hide_small {
-        display: flex;
-    }
+}
 
 }
 
@@ -337,9 +328,5 @@ input, textarea  {
     max-width: 200px;
     margin: 0px;
     box-shadow: 2px 2px 2px #9c9999;
-    }
-    
-    .hide_small {
-        display: flex;
-    }
+}
 }
