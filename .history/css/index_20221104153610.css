@@ -1,0 +1,213 @@
+html {
+    background: url(../images/alex-avalos-dnUNjIUCg5c-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode:soft-light;
+    background-color: #ddddc5;
+    min-height: 100%;
+}
+
+h1, h2 {
+    font-family: 'Lora', serif;
+    font: bold;
+    font-size: x-large;
+    text-align: center;
+    font-weight: bold;
+}
+
+p {
+    font-family: 'DM Sans', sans-serif;
+    color: #000000;
+    text-align: left;
+    padding: 5px 60px;
+}
+
+.index {
+    text-shadow: 2px 2px 2px #9c9999;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 85px 10px 85px;
+}
+
+header {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+}
+
+.genre, .price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.price {
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+
+.hobbs, .godzilla, .batman,
+.toy-story, .addams, .sweetheart, .hollywood, .scream {
+    max-width: 100px;
+    margin: 0px;
+    box-shadow: 2px 2px 2px #9c9999;
+}
+
+.collections {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cta {
+    background-color: #611428;
+    color: #ddddc5;
+    font-family: 'Lora', serif;
+    border-radius: 50px;
+    width: 100px;
+    height: 35px;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 2px 2px 2px #9c9999;
+}
+
+.long {
+    align-self: center;
+    width: 200px;
+    margin: 5px;
+}
+
+.back {
+    background-image: url(../images/Arrow\ 6.png);
+    background-repeat: no-repeat;
+    background-position: 5px;
+}
+
+.logo {
+    max-width: 150px;
+    padding: 0px;
+}
+
+ul a {
+    font-family: 'DM Sans', sans-serif;
+    color: #000000;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px #9c9999;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0%;
+}
+
+.active, .bold {
+    font-weight: bold;
+}
+
+.allproducts {
+    display: flex;
+    flex-direction: row;
+}
+
+.addams__specific {
+    max-width: 50%;
+    max-height: 50%;
+    padding: 95px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.checkmark {
+    padding-left: 155px;
+}
+
+.checkout_buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.index {
+    text-align: left;
+    padding-left: 15px;
+}
+
+.continue {
+    text-align: center;
+    padding: 0px;
+}
+
+.congratulations {
+    color: #611428;
+    font-size: xx-large;
+}
+
+.director_photo {
+    padding-left: 50px;
+}
+
+input, textarea  {
+    margin-bottom: 5px;
+    border-radius: 15px;
+    background-color: #ddddc5;
+    box-shadow: 2px 2px 2px #9c9999;
+    border: none;
+    height: 25px;
+}
+
+.contact_form {
+    padding: 5px;
+}
+
+.message {
+    height: 60px;
+}
+
+.small_form {
+    display: flex;
+    justify-content: center space-evenly;
+    width: 98px;
+}
+
+.paypal {
+    width: 80px;
+    height: 60px;
+    border-radius: 90px;
+    display: flex;
+    align-self: center;
+    background-image: url(../images/logos_paypal.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    box-shadow: 2px 2px 2px #9c9999;
+}
+
+.product_text {
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+@media (min-width: 600px) {
+    header {
+        justify-content: space-between;
+        } 
+    .genre, .price {
+        justify-content: center space-evenly;
+    }
+
+    p {
+        margin: 0px 400px;
+    }
+
+    h1, h2 {
+        padding-left: 50px;
+    }
+   }
