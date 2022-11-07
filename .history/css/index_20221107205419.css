@@ -309,10 +309,6 @@ input, textarea  {
         display: flex;
     }
 
-    .collection {
-        height: 150px;
-    }
-
 }
 
 @media (min-width: 1000px) {
