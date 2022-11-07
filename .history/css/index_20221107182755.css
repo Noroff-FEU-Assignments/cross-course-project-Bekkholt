@@ -203,7 +203,7 @@ input, textarea  {
     text-decoration: none;
     margin: auto;
     width: fit-content;
-    padding: 5px 0;
+    padding: 0 5px;
 }
 
 .paypal_button_text {

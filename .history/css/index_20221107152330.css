@@ -185,36 +185,10 @@ input, textarea  {
     border-radius: 90px;
     display: flex;
     align-self: center;
-    background-image: url(../images/paypal_button.png);
+    background-image: url(../images/logos_paypal.png);
     background-repeat: no-repeat;
     background-position: 50%;
     box-shadow: 2px 2px 2px #9c9999;
-}
-
-.paypal_button {
-    /* width: 80px;
-    height: 60px; */
-    border-radius: 90px;
-    display: flex;
-    flex-direction: column;
-    background-color: #ddddc5;
-    align-self: center;
-    box-shadow: 2px 2px 2px #9c9999;
-    text-decoration: none;
-    margin: auto;
-    width: fit-content;
-    padding: 5px 0;
-}
-
-.paypal_button_text {
-    text-align: center;
-    margin: 0 30px;
-    padding: 0;
-}
-
-.paypal_button_logo {
-    width: 30px;
-    align-self: center;
 }
 
 .product_text {
@@ -223,6 +197,9 @@ input, textarea  {
 }
 
 @media (min-width: 600px) and (max-width: 999px) {
+    header {
+        justify-content: space-between;
+        }
 
     p {
     margin: 0px 100px;
@@ -277,6 +254,10 @@ input, textarea  {
 }
 
 @media (min-width: 1000px) {
+    
+    header {
+        justify-content: space-between;
+        }
 
     p {
     margin: 20px 300px;
@@ -303,16 +284,11 @@ input, textarea  {
     .small_form {
         display: flex;
         justify-content: center space-evenly;
-        width: 125px;
+        width: 150px;
     }
 
     .index {
         margin-left: 90px;
-    }
-
-    .logo {
-        max-width: 250px;
-        padding: 0px;
     }
 
     .hobbs, .godzilla, .batman,
@@ -321,4 +297,10 @@ input, textarea  {
     margin: 0px;
     box-shadow: 2px 2px 2px #9c9999;
 }
+
+    .logo {
+    max-width: 250px;
+    padding: 0px;
+}
+
 }

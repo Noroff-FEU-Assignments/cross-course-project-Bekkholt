@@ -201,15 +201,11 @@ input, textarea  {
     align-self: center;
     box-shadow: 2px 2px 2px #9c9999;
     text-decoration: none;
-    margin: auto;
-    width: fit-content;
-    padding: 5px 0;
 }
 
 .paypal_button_text {
     text-align: center;
-    margin: 0 30px;
-    padding: 0;
+    margin: 0 0 0 0;
 }
 
 .paypal_button_logo {
