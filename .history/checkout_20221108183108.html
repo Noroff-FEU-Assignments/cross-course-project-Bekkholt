@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Square Eyes | The Addams Family (2019)</title>
+    <title>Square Eyes | Checkout</title>
     <meta name="description" content="Square Eyes - Connecting film lovers.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/index.css" rel="stylesheet">
@@ -16,30 +16,27 @@
       <a href="index.html" class="cta back">Back</a>
     </header>
     <main>
-    <h1>The Addams Family (2019)</h1>
+    <h1>Checkout</h1>
     <div class="items">
     <img class="addams__specific" src="images/Square_Eyes_Cover6.jpeg" alt="The Addams Family - Halloween">
+    <form action="submit.php" method="post">
+      <input type="text" placeholder="Name on card" class="checkout_form" name="fullname">
+      <input type="number" placeholder="Card number" class="checkout_form" name="cardnumber">
+      <section class="small_form">
+        <input type="number" placeholder="Expery date" class="small_form small_form_left" name="experydate">
+        <input type="number" placeholder="CCV" class="small_form small_form_right" name="CCV">
+      </section>
+    </div>
+      <p class="continue">or continue with</p>
+    </form>
+    <a href="checkout-success.html" class="paypal_button" alt="Paypal">
+      <p class="paypal_button_text">PayPal</p>
+      <img class="paypal_button_logo" src="images/logos_paypal.png" />
+    </a>
     <div class="checkout_buttons">
-    <a href="checkout.html" class="cta cta_tall">Buy now</a>
+    <a href="checkout-success.html"><button class="cta cta_tall long">PURCHASE</button></a>
+    <a href="product-list.html"><button class="cta cta_tall long">Continue shopping</button></a>
     </div>
-    </div>
-    <div>
-    <p>
-        The eccentrically macabre family moves to a bland surburb where Wednesday Addams' friendship with the daughter of a hostile and conformist local reality show host exacerbates conflict between the families.
-    </p>
-    <p class="product_text bold">
-        Directed by:
-    </p>
-    <p class="product_text">
-        Greg Tiernan, Conrad Vernon
-    </p>
-    <p class="product_text bold">
-        Featuring:
-    </p>
-    <p class="product_text">
-        Oscar Isaac, Charlize Theron, Chloë Grace Moretz, Finn Wolfhard and more.
-    </p>
-  </div>
   </main>
   <footer>
     <nav>

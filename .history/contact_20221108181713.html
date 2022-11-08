@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Square Eyes | Successful purchase</title>
+    <title>Square Eyes | Contact</title>
     <meta name="description" content="Square Eyes - Connecting film lovers.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/index.css" rel="stylesheet">
@@ -13,23 +13,31 @@
   <body>
     <header>
       <a href="index.html"><img class="logo" src="images/SquareEyes_Logo.png" alt="Square Eyes logo"></a>
+      <a href="index.html"><button class="cta back">Back</button></a>
     </header>
     <main>
-    <h1 class="congratulations">Congratulations!</h1>
+      <div class="items">
+    <h1>Contact</h1>
     <p>
-        It's yours! Your checkout was successful. You can now watch the film(s), or save the experience for later as the film(s) is added to your profile.
+        Do you have something you want to ask us or tell us. Maybe something we can do better? Fill in this form and tell!
     </p>
-    <div class="items">
-      <img class="checkmark" src="images/clarity_success-standard-line.png" alt="checkmark">
-      <img class="addams__specific" src="images/Square_Eyes_Cover6.jpeg" alt="The Addams Family - Halloween">
+    <form action="submit.php" method="post">
+      <input class="contact_form" placeholder="Full name" type="text" name="fullname" />
+      <input class="contact_form contact_form_space" placeholder="Email" type="email" name="email" />
+      <input class="contact_form" placeholder="Subject" type="text" name="subject" />
+      <textarea class="message" placeholder="Write your message here." id="message" name="message" rows="5" cols="20"></textarea>
+    </form>
+    <div class="checkout_buttons">
+      <a href="index.html" class="cta cta_tall long">SUBMIT</a>
     </div>
+  </div>
   </main>
   <footer>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
       </ul>
     </nav>
   </footer>
