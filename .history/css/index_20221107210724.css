@@ -72,7 +72,6 @@ padding: 20px;
     width: 100px;
     text-decoration: none;
     text-align: center;
-    border: none;
     box-shadow: 2px 2px 2px #9c9999;
 }
 
@@ -262,7 +261,7 @@ input, textarea  {
     margin-bottom: 1px;
 }
 
-.hide_small, .hide_price {
+.hide_small{
     display: none;
 }
 
@@ -306,8 +305,8 @@ input, textarea  {
     padding: 0px;
     }
 
-    .hide_small, .hide_price {
-        display: block;
+    .hide_small {
+        display: flex;
     }
 
     .collection {
@@ -316,11 +315,7 @@ input, textarea  {
 
     p {
         padding: 0px 100px;
-}
 
-.cta {
-    padding: 10px;
-}
 }
 
 @media (min-width: 1000px) {
@@ -351,20 +346,11 @@ input, textarea  {
     box-shadow: 2px 2px 2px #9c9999;
     }
     
-    .hide_small, .hide_price {
-        display: block;
+    .hide_small {
+        display: flex;
     }
 
     .collection {
         height: 200px;
-        width: 300px;
     }
-
-    p {
-        padding: 0px 200px;
-}
-
-    .cta {
-    padding: 10px;
-}
 }

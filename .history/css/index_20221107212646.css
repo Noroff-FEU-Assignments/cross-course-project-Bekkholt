@@ -306,7 +306,11 @@ input, textarea  {
     padding: 0px;
     }
 
-    .hide_small, .hide_price {
+    .hide_small {
+        display: flex;
+    }
+
+    .hide_price {
         display: block;
     }
 
@@ -351,13 +355,17 @@ input, textarea  {
     box-shadow: 2px 2px 2px #9c9999;
     }
     
-    .hide_small, .hide_price {
+    .hide_small {
+        display: flex;
+    }
+
+    .hide_price {
         display: block;
     }
 
+
     .collection {
         height: 200px;
-        width: 300px;
     }
 
     p {

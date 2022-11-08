@@ -307,7 +307,7 @@ input, textarea  {
     }
 
     .hide_small, .hide_price {
-        display: block;
+        display: flex;
     }
 
     .collection {
@@ -352,12 +352,11 @@ input, textarea  {
     }
     
     .hide_small, .hide_price {
-        display: block;
+        display: flex;
     }
 
     .collection {
         height: 200px;
-        width: 300px;
     }
 
     p {

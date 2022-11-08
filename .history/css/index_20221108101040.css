@@ -367,4 +367,9 @@ input, textarea  {
     .cta {
     padding: 10px;
 }
+
+.contact_form, .message {
+    display: flex;
+    width: fit-content;
+}
 }
