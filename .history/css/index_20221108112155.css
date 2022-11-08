@@ -301,11 +301,11 @@ input, textarea  {
 
     p {
         padding: 0px 100px;
-    }
+}
 
     .cta {
     padding: 10px;
-    }
+}
 }
 
 @media (min-width: 1000px) {

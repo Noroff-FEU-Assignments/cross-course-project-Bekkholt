@@ -175,10 +175,6 @@ ul {
     align-items: flex-start;
 }
 
-.director_photo {
-    padding-left: 110px;
-}
-
 input, textarea  {
     margin-bottom: 5px;
     border-radius: 20px;
@@ -301,11 +297,11 @@ input, textarea  {
 
     p {
         padding: 0px 100px;
-    }
+}
 
-    .cta {
+.cta {
     padding: 10px;
-    }
+}
 }
 
 @media (min-width: 1000px) {
