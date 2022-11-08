@@ -61,7 +61,7 @@ padding: 20px;
 .collections {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .cta {
@@ -70,7 +70,6 @@ padding: 20px;
     font-family: 'Lora', serif;
     border-radius: 50px;
     width: 100px;
-    padding: 10px;
     text-decoration: none;
     text-align: center;
     border: none;

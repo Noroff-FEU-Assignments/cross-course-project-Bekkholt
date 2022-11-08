@@ -70,7 +70,6 @@ padding: 20px;
     font-family: 'Lora', serif;
     border-radius: 50px;
     width: 100px;
-    padding: 10px;
     text-decoration: none;
     text-align: center;
     border: none;
@@ -173,7 +172,7 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px 20px;
+    padding: 0px 60px;
 }
 
 input, textarea  {
@@ -210,7 +209,8 @@ input, textarea  {
 
 .small_form {
     display: flex;
-    flex-direction: row;
+    justify-content: center space-evenly;
+    width: 98px;
 }
 
 .small_form_left {
@@ -270,10 +270,31 @@ input, textarea  {
 
     .addams__specific {
         width: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .small_form {
+        display: flex;
+        justify-content: center space-evenly;
+        width: 125px;
     }
 
     .index {
         margin-left: 40px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 200px 10px 200px;
+    }
+
+    .small_form {
+        display: flex;
+        justify-content: center space-evenly;
+        width: 110px;
     }
 
     .hobbs, .godzilla, .batman,
@@ -308,7 +329,14 @@ input, textarea  {
 @media (min-width: 1000px) {
 
     .addams__specific {
-        width: 250px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .small_form {
+        display: flex;
+        justify-content: center space-evenly;
+        width: 125px;
     }
 
     .index {

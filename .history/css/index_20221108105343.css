@@ -61,7 +61,7 @@ padding: 20px;
 .collections {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .cta {
