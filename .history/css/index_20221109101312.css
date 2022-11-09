@@ -1,0 +1,359 @@
+html {
+    background: url(../images/alex-avalos-dnUNjIUCg5c-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode:soft-light;
+    background-color: #ddddc5;
+    min-height: 100%;
+}
+
+h1, h2 {
+    font-family: 'Lora', serif;
+    font: bold;
+    font-size: x-large;
+    text-align: center;
+    font-weight: bold;
+}
+
+p {
+    font-family: 'DM Sans', sans-serif;
+    color: #000000;
+    text-align: left;
+    padding: 0px 60px;
+}
+
+.index {
+    text-shadow: 2px 2px 2px #9c9999;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 85px 10px 85px;
+}
+
+header {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding: 20px;
+}
+
+.genre, .price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.price {
+    padding-top: 0px;
+    padding-bottom: 30px;
+}
+
+.hobbs, .godzilla, .batman,
+.toy-story, .addams, .sweetheart, .hollywood, .scream {
+    max-width: 100px;
+    margin: 0px;
+    box-shadow: 2px 2px 2px #9c9999;
+}
+
+.collections {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cta {
+    background-color: #611428;
+    color: #ddddc5;
+    font-family: 'Lora', serif;
+    border-radius: 50px;
+    width: 100px;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    box-shadow: 2px 2px 2px #9c9999;
+}
+
+.cta_tall {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.long {
+    align-self: center;
+    width: 200px;
+    margin: 5px;
+}
+
+nav {
+    margin-top: 50px;
+}
+
+.back {
+    background-image: url(../images/Arrow\ 6.png);
+    background-repeat: no-repeat;
+    background-position: 5px;
+}
+
+.logo {
+    max-width: 150px;
+    padding: 0px;
+}
+
+ul a {
+    font-family: 'DM Sans', sans-serif;
+    color: #000000;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px #9c9999;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0%;
+}
+
+.active, .bold {
+    font-weight: bold;
+}
+
+.allproducts {
+    display: flex;
+    flex-direction: row;
+}
+
+.addams__specific {
+    max-width: 50%;
+    max-height: 50%;
+    padding: 95px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.checkmark {
+    height: 70px;
+}
+
+.checkout_buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5px;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.index {
+    text-align: left;
+    padding-left: 15px;
+    margin: 5px 0px;
+}
+
+.continue {
+    text-align: center;
+    padding: 0px;
+    margin: 20px;
+}
+
+.congratulations {
+    color: #611428;
+    font-size: xx-large;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.director_photo {
+    padding-left: 110px;
+}
+
+input, textarea  {
+    margin-bottom: 5px;
+    border-radius: 20px;
+    background-color: #ddddc5;
+    box-shadow: 2px 2px 2px #9c9999;
+    border: none;
+    height: 25px;
+}
+
+.checkout_form {
+    margin-bottom: 15px;
+}
+
+.contact_form {
+    padding: 10px;
+}
+
+.contact_form_space {
+    margin-bottom: 30px;
+}
+
+.message {
+    height: 60px;
+    padding: 10px;
+}
+
+.submit_form_space {
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.small_form {
+    display: flex;
+    flex-direction: row;
+}
+
+.small_form_left {
+    margin-right: 2px;
+}
+
+.small_form_right {
+    margin-left: 2px;
+}
+
+.paypal {
+    width: 80px;
+    height: 60px;
+    border-radius: 90px;
+    display: flex;
+    align-self: center;
+    background-image: url(../images/paypal_button.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    box-shadow: 2px 2px 2px #9c9999;
+}
+
+.paypal_button {
+    border-radius: 90px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ddddc5;
+    align-self: center;
+    box-shadow: 2px 2px 2px #9c9999;
+    text-decoration: none;
+    margin: auto;
+    width: fit-content;
+    padding: 5px 0px;
+}
+
+.paypal_button_text {
+    text-align: center;
+    margin: 0px 30px;
+    padding: 0px;
+}
+
+.paypal_button_logo {
+    width: 30px;
+    align-self: center;
+}
+
+.product_text {
+    margin-top: 1px;
+    margin-bottom: 1px;
+}
+
+.hide_small, .hide_price {
+    display: none;
+}
+
+@media (min-width: 600px) and (max-width: 999px) {
+
+    .addams__specific {
+        width: 250px;
+    }
+
+    .index {
+        margin-left: 40px;
+    }
+
+    .hobbs, .godzilla, .batman,
+    .toy-story, .addams, .sweetheart, .hollywood, .scream {
+    max-width: 150px;
+    margin: 0px;
+    box-shadow: 2px 2px 2px #9c9999;
+    }
+
+    .logo {
+    max-width: 200px;
+    padding: 0px;
+    }
+
+    .hide_small, .hide_price {
+        display: block;
+    }
+
+    .collection {
+        height: 150px;
+    }
+
+    p {
+        padding: 0px 100px;
+    }
+
+    .cta {
+    padding: 10px;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    .addams__specific {
+        width: 250px;
+    }
+
+    .index {
+        margin-left: 90px;
+    }
+
+    .logo {
+        max-width: 250px;
+        padding: 0px;
+    }
+
+    .hobbs, .godzilla, .batman,
+    .toy-story, .addams, .sweetheart, .hollywood, .scream {
+    opacity: 1;
+    max-width: 200px;
+    margin: 0px;
+    box-shadow: 2px 2px 2px #9c9999;
+    }
+    
+    .hide_small, .hide_price {
+        display: block;
+    }
+
+    .collection {
+        height: 200px;
+        width: 300px;
+    }
+
+    p {
+        padding: 0px 200px;
+    }
+
+    .cta {
+    padding: 10px;
+    }
+
+    .cta:hover {
+    background-color: #611428b7;
+    }
+
+    nav:hover {
+        text-shadow: 4px 4px;
+    }
+    
+}
