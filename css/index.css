@@ -172,7 +172,8 @@ ul {
 }
 
 .director_photo {
-    padding-left: 110px;
+    display: flex;
+    align-self: center;
 }
 
 input, textarea  {
