@@ -32,18 +32,11 @@ form {
     padding: 10px 85px 10px 85px;
 }
 
-.small_header {
+.header {
 display: flex;
 flex-direction: row;
 justify-content: space-between;
 align-items: center;
-}
-
-.full_header {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding-bottom: 20px;
 }
 
 .genre, .price {
