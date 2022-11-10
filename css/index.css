@@ -51,6 +51,7 @@ align-items: center;
     align-items: center;
     justify-content: space-evenly;
     padding: 0px 5px;
+    margin-bottom: 30px;
 }
 
 .hobbs, .godzilla, .batman,
