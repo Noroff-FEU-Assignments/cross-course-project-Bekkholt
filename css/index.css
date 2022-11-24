@@ -1,3 +1,12 @@
+:root {
+    --black: #000000;
+    --beige: #9c9999;
+    --lightbeige: #ddddc5;
+    --red: #611428;
+    --darkred: #611428b7;
+    --shadow: 2px 2px 2px;
+}
+
 html {
     background: url(../images/alex-avalos-dnUNjIUCg5c-unsplash.jpg);
     background-size: cover;
@@ -5,17 +14,7 @@ html {
     background-blend-mode:soft-light;
     min-height: 100%;
     min-width: fit-content;
-}
-
-:root {
-    --black: #000000;
-    --beige: #9c9999;
-    --lightbeige: #ddddc5;
-    --red: #611428;
-    color: #000000;
-    box-shadow: 2px 2px 2px #9c9999;
-    text-shadow: 2px 2px 2px #9c9999;
-    background-color: #ddddc5;
+    background-color: var(--lightbeige);
 }
 
 h1, h2 {
@@ -24,6 +23,7 @@ h1, h2 {
     font-size: x-large;
     text-align: center;
     font-weight: bold;
+    text-shadow: var(--shadow) var(--beige)
 }
 
 p {
@@ -66,6 +66,7 @@ form {
 .toy-story, .addams, .sweetheart, .hollywood, .scream {
     max-width: 100px;
     margin: 0px;
+    box-shadow: var(--shadow) var(--beige);
 }
 
 .cta {
@@ -79,11 +80,13 @@ form {
     text-align: center;
     text-shadow: none;
     border: none;
+    box-shadow: var(--shadow) var(--beige);
 }
 
 .cta_tall {
     padding-top: 10px;
     padding-bottom: 10px;
+    box-shadow: var(--shadow) var(--beige);
 }
 
 .long {
@@ -110,6 +113,7 @@ nav {
 ul a {
     font-family: 'DM Sans', sans-serif;
     color: var(--black);
+    text-shadow: var(--shadow) var(--beige);
     text-decoration: none;
 }
 
@@ -195,6 +199,7 @@ input, textarea  {
 
 .checkout_form {
     margin-bottom: 15px;
+    color: var(--beige);
 }
 
 .contact_form {
@@ -400,11 +405,11 @@ footer {
     }
 
     .cta:hover {
-    background-color: #611428b7;
+    background-color: var(--darkred);
     }
 
     a:hover {
-        text-shadow: 1px 1px 3px;
+        text-shadow: 1px 1px 3px var(--beige);
     }
 
     .hobbs:hover, .godzilla:hover, .batman:hover,
