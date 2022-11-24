@@ -5,6 +5,24 @@
     --red: #611428;
     --darkred: #611428b7;
     --shadow: 2px 2px 2px;
+    --none: 0px;
+    --one: 1px;
+    --five: 5px;
+    --ten: 10px;
+    --fifteen: 15px;
+    --twenty: 20px;
+    --thirty: 30px;
+    --fifty: 50px;
+    --sixty: 60px;
+    --seventy: 70px;
+    --ninty: 90px;
+    --hundred: 100px;
+    --hundredfifty: 150px;
+    --twohundred: 200px;
+    --threehundred: 300px;
+    --nopercent: 0%;
+    --halfpercent: 50%;
+    --fullpercent: 100%; 
 }
 
 html {
@@ -12,7 +30,7 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode:soft-light;
-    min-height: 100%;
+    min-height: var(--fullpercent);
     min-width: fit-content;
     background-color: var(--lightbeige);
 }
@@ -29,7 +47,7 @@ h1, h2 {
 p {
     font-family: 'DM Sans', sans-serif;
     text-align: left;
-    padding: 0px 60px;
+    padding: var(--none) var(--sixty);
     text-shadow: none;
     color: var(--black);
 }
@@ -59,13 +77,13 @@ form {
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    margin-bottom: 30px;
+    margin-bottom: var(--thirty);
 }
 
 .hobbs, .godzilla, .batman,
 .toy-story, .addams, .sweetheart, .hollywood, .scream {
-    max-width: 100px;
-    margin: 0px;
+    max-width: var(--hundred);
+    margin: var(--none);
     box-shadow: var(--shadow) var(--beige);
 }
 
@@ -73,9 +91,9 @@ form {
     background-color: var(--red);
     color: var(--lightbeige);
     font-family: 'Lora', serif;
-    border-radius: 50px;
-    width: 100px;
-    padding: 10px;
+    border-radius: var(--fifty);
+    width: var(--hundred);
+    padding: var(--ten);
     text-decoration: none;
     text-align: center;
     text-shadow: none;
@@ -84,30 +102,30 @@ form {
 }
 
 .cta_tall {
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: var(--ten);
+    padding-bottom: var(--ten);
     box-shadow: var(--shadow) var(--beige);
 }
 
 .long {
     align-self: center;
-    width: 200px;
-    margin: 5px;
+    width: var(--twohundred);
+    margin: var(--five);
 }
 
 nav {
-    margin-top: 50px;
+    margin-top: var(--fifty);
 }
 
 .back {
     background-image: url(../images/Arrow\ 6.png);
     background-repeat: no-repeat;
-    background-position: 5px;
+    background-position: var(--five);
 }
 
 .logo {
-    max-width: 150px;
-    padding: 0px;
+    max-width: var(--hundredfifty);
+    padding: var(--none);
 }
 
 ul a {
@@ -122,7 +140,7 @@ ul {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 0%;
+    padding: var(--nopercent);
 }
 
 .active, .bold {
@@ -135,17 +153,17 @@ ul {
 }
 
 .addams__specific {
-    max-width: 50%;
-    max-height: 50%;
+    max-width: var(--halfpercent);
+    max-height: var(--halfpercent);
     padding: 95px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: var(--twenty);
+    padding-bottom: var(--twenty);
     align-self: center;
 }
 
 .checkmark {
-    height: 70px;
-    width: 70px;
+    height: var(--seventy);
+    width: var(--seventy);
     align-self: center;
 }
 
@@ -153,7 +171,7 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 5px;
+    padding-top: var(--five);
 }
 
 .items {
@@ -163,14 +181,14 @@ ul {
 
 .index {
     text-align: left;
-    padding-left: 15px;
-    margin: 5px 0px;
+    padding-left: var(--fifteen);
+    margin: var(--five) var(--none);
 }
 
 .continue {
     text-align: center;
-    padding: 0px;
-    margin: 20px;
+    padding: var(none);
+    margin: var(--twenty);
 }
 
 .congratulations {
@@ -190,35 +208,35 @@ ul {
 }
 
 input, textarea  {
-    margin-bottom: 5px;
-    border-radius: 20px;
+    margin-bottom: var(--five);
+    border-radius: var(--twenty);
     background-color: var(--lightbeige);
     border: none;
     height: 25px;
 }
 
 .checkout_form {
-    margin-bottom: 15px;
+    margin-bottom: var(--fifteen);
     color: var(--beige);
 }
 
 .contact_form {
-    padding: 10px;
+    padding: var(--ten);
 }
 
 .contact_form_space {
-    margin-bottom: 30px;
+    margin-bottom: var(--thirty);
 }
 
 .message {
-    height: 60px;
-    padding: 10px;
+    height: var(--sixty);
+    padding: var(--ten);
 }
 
 .submit_form_space {
-    padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 60px;
+    padding: var(--ten);
+    margin-top: var(--twenty);
+    margin-bottom: var(--sixty);
 }
 
 .small_form {
@@ -238,17 +256,17 @@ input, textarea  {
 
 .paypal {
     width: 80px;
-    height: 60px;
-    border-radius: 90px;
+    height: var(--sixty);
+    border-radius: var(--ninty);
     display: flex;
     align-self: center;
     background-image: url(../images/paypal_button.png);
     background-repeat: no-repeat;
-    background-position: 50%;
+    background-position: var(--halfpercent);
 }
 
 .paypal_button {
-    border-radius: 90px;
+    border-radius: var(--ninty);
     display: flex;
     flex-direction: column;
     background-color: var(--lightbeige);
@@ -256,23 +274,23 @@ input, textarea  {
     text-decoration: none;
     margin: auto;
     width: fit-content;
-    padding: 5px 0px;
+    padding: var(--five) var(--none);
 }
 
 .paypal_button_text {
     text-align: center;
-    margin: 0px 30px;
-    padding: 0px;
+    margin: var(--none) var(--thirty);
+    padding: var(--none);
 }
 
 .paypal_button_logo {
-    width: 30px;
+    width: var(--thirty);
     align-self: center;
 }
 
 .product_text {
-    margin-top: 1px;
-    margin-bottom: 1px;
+    margin-top: var(--one);
+    margin-bottom: var(--one);
 }
 
 .hide_small, .hide_price {
@@ -286,9 +304,9 @@ input, textarea  {
 
 footer {
     position: sticky;
-    bottom: 0%;
-    left: 0%;
-    width: 100%;
+    bottom: var(--nopercent);
+    left: var(--nopercent);
+    width: var(--fullpercent);
     background: var(--lightbeige);
 }
 
@@ -313,11 +331,11 @@ footer {
         display: flex;
         flex-direction: column;
         align-self: center;
-        width: 50%;
+        width: var(--halfpercent);
     }
 
     .small_form_left, .small_form_right {
-        width: 50%;
+        width: var(--halfpercent);
     }
 }
 
@@ -333,13 +351,13 @@ footer {
 
     .hobbs, .godzilla, .batman,
     .toy-story, .addams, .sweetheart, .hollywood, .scream {
-    max-width: 150px;
-    margin: 0px;
+    max-width: var(--hundredfifty);
+    margin: var(--none);
     }
 
     .logo {
-    max-width: 200px;
-    padding: 0px;
+    max-width: var(--twohundred);
+    padding: var(--none);
     }
 
     .hide_small, .hide_price {
@@ -347,15 +365,15 @@ footer {
     }
 
     .collection {
-        height: 150px;
+        height: var(--hundredfifty);
     }
 
     p {
-        padding: 0px 100px;
+        padding: var(--none) var(--hundred);
     }
 
     .cta {
-    padding: 10px;
+    padding: var(--ten);
     }
 
     nav {
@@ -371,19 +389,19 @@ footer {
     }
 
     .index {
-        margin-left: 90px;
+        margin-left: var(--ninty);
     }
 
     .logo {
         max-width: 250px;
-        padding: 0px;
+        padding: var(--none);
     }
 
     .hobbs, .godzilla, .batman,
     .toy-story, .addams, .sweetheart, .hollywood, .scream {
     opacity: 1;
-    max-width: 200px;
-    margin: 0px;
+    max-width: var(--twohundred);
+    margin: var(--none);
     }
     
     .hide_small, .hide_price {
@@ -391,17 +409,17 @@ footer {
     }
 
     .collection {
-        height: 200px;
-        width: 300px;
+        height: var(--twohundred);
+        width: var(--threehundred);
         opacity: 1;
     }
 
     p {
-        padding: 0px 200px;
+        padding: var(--none) var(--twohundred);
     }
 
     .cta {
-    padding: 10px;
+    padding: var(--ten);
     }
 
     .cta:hover {
@@ -409,7 +427,7 @@ footer {
     }
 
     a:hover {
-        text-shadow: 1px 1px 3px var(--beige);
+        text-shadow: var(--one) var(--one) 3px var(--beige);
     }
 
     .hobbs:hover, .godzilla:hover, .batman:hover,
@@ -427,7 +445,7 @@ footer {
     }
 
     .logo {
-        padding-right: 100px;
+        padding-right: var(--hundred);
     }
 
     .logo_back {
@@ -437,13 +455,12 @@ footer {
     }
 
     .contact_form {
-        padding: 20px 20px;
-        padding-right: 300px;
-        border-radius: 50px;
+        padding: var(--twenty) var(--twenty);
+        padding-right: var(--threehundred);
+        border-radius: var(--fifty);
     }
 
     nav {
         font-size: x-large;
     }
-
 }
