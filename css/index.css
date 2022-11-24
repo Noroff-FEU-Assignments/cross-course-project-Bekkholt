@@ -3,8 +3,19 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     background-blend-mode:soft-light;
-    background-color: #ddddc5;
     min-height: 100%;
+    min-width: fit-content;
+}
+
+:root {
+    --black: #000000;
+    --beige: #9c9999;
+    --lightbeige: #ddddc5;
+    --red: #611428;
+    color: #000000;
+    box-shadow: 2px 2px 2px #9c9999;
+    text-shadow: 2px 2px 2px #9c9999;
+    background-color: #ddddc5;
 }
 
 h1, h2 {
@@ -17,26 +28,24 @@ h1, h2 {
 
 p {
     font-family: 'DM Sans', sans-serif;
-    color: #000000;
     text-align: left;
     padding: 0px 60px;
-}
-
-.index {
-    text-shadow: 2px 2px 2px #9c9999;
+    text-shadow: none;
+    color: var(--black);
 }
 
 form {
     display: flex;
     flex-direction: column;
-    padding: 10px 85px 10px 85px;
+    align-self: center;
+    width: fit-content;
 }
 
 .header {
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .genre, .price {
@@ -50,7 +59,6 @@ align-items: center;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    padding: 0px 5px;
     margin-bottom: 30px;
 }
 
@@ -58,20 +66,19 @@ align-items: center;
 .toy-story, .addams, .sweetheart, .hollywood, .scream {
     max-width: 100px;
     margin: 0px;
-    box-shadow: 2px 2px 2px #9c9999;
 }
 
 .cta {
-    background-color: #611428;
-    color: #ddddc5;
+    background-color: var(--red);
+    color: var(--lightbeige);
     font-family: 'Lora', serif;
     border-radius: 50px;
     width: 100px;
     padding: 10px;
     text-decoration: none;
     text-align: center;
+    text-shadow: none;
     border: none;
-    box-shadow: 2px 2px 2px #9c9999;
 }
 
 .cta_tall {
@@ -102,9 +109,8 @@ nav {
 
 ul a {
     font-family: 'DM Sans', sans-serif;
-    color: #000000;
+    color: var(--black);
     text-decoration: none;
-    text-shadow: 2px 2px 2px #9c9999;
 }
 
 ul {
@@ -130,10 +136,13 @@ ul {
     padding: 95px;
     padding-top: 20px;
     padding-bottom: 20px;
+    align-self: center;
 }
 
 .checkmark {
     height: 70px;
+    width: 70px;
+    align-self: center;
 }
 
 .checkout_buttons {
@@ -146,7 +155,6 @@ ul {
 .items {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .index {
@@ -162,7 +170,7 @@ ul {
 }
 
 .congratulations {
-    color: #611428;
+    color: var(--red);
     font-size: xx-large;
 }
 
@@ -180,8 +188,7 @@ ul {
 input, textarea  {
     margin-bottom: 5px;
     border-radius: 20px;
-    background-color: #ddddc5;
-    box-shadow: 2px 2px 2px #9c9999;
+    background-color: var(--lightbeige);
     border: none;
     height: 25px;
 }
@@ -212,6 +219,8 @@ input, textarea  {
 .small_form {
     display: flex;
     flex-direction: row;
+    align-self: center space-evenly;
+    width: fit-content;
 }
 
 .small_form_left {
@@ -231,16 +240,14 @@ input, textarea  {
     background-image: url(../images/paypal_button.png);
     background-repeat: no-repeat;
     background-position: 50%;
-    box-shadow: 2px 2px 2px #9c9999;
 }
 
 .paypal_button {
     border-radius: 90px;
     display: flex;
     flex-direction: column;
-    background-color: #ddddc5;
+    background-color: var(--lightbeige);
     align-self: center;
-    box-shadow: 2px 2px 2px #9c9999;
     text-decoration: none;
     margin: auto;
     width: fit-content;
@@ -269,8 +276,44 @@ input, textarea  {
 
 .collections {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
+}
+
+footer {
+    position: sticky;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    background: var(--lightbeige);
+}
+
+@media (min-width: 200px) and (max-width: 400px) {
+    .collections {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        }
+
+    .hide_mini {
+        display: none;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        width: 50%;
+    }
+
+    .small_form_left, .small_form_right {
+        width: 50%;
+    }
 }
 
 @media (min-width: 600px) and (max-width: 999px) {
@@ -287,7 +330,6 @@ input, textarea  {
     .toy-story, .addams, .sweetheart, .hollywood, .scream {
     max-width: 150px;
     margin: 0px;
-    box-shadow: 2px 2px 2px #9c9999;
     }
 
     .logo {
@@ -337,7 +379,6 @@ input, textarea  {
     opacity: 1;
     max-width: 200px;
     margin: 0px;
-    box-shadow: 2px 2px 2px #9c9999;
     }
     
     .hide_small, .hide_price {
