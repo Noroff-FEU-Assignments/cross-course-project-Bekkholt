@@ -229,7 +229,7 @@ input, textarea  {
     margin-bottom: var(--thirty);
 }
 
-.message {
+.place-text {
     height: var(--sixty);
     padding: var(--ten);
 }
@@ -309,6 +309,31 @@ footer {
     left: var(--nopercent);
     width: var(--fullpercent);
     background: var(--lightbeige);
+}
+
+.error {
+    border: 2px solid rgb(255, 0, 0);
+    padding: 1rem;
+    color: rgb(139, 0, 0);
+    background: var(--darkred);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.success {
+    background: rgb(109, 173, 13);
+    padding: 7px;
+    margin: 5px;
+    color: #101f02b7;
+    border-radius: 5px;
+}
+
+.no-requirement {
+    background: rgba(219, 37, 34, 0.629);
+    padding: 7px;
+    margin: 5px;
+    color: #1b0101b7;
+    border-radius: 5px;
 }
 
 @media (min-width: 200px) and (max-width: 400px) {

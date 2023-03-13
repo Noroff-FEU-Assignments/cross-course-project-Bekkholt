@@ -33,15 +33,14 @@
       <p>
         Do you have something you want to ask us or tell us. Maybe something we can do better? Fill in this form and tell!
       </p>
-      <form action="submit.php" method="post">
-        <input class="contact_form" placeholder="Full name" type="text" name="fullname" title="Full name">
-        <input class="contact_form contact_form_space" placeholder="Email" type="email" name="email" title="Email">
-        <input class="contact_form" placeholder="Subject" type="text" name="subject" title="Subject">
-        <textarea class="message" placeholder="Write your message here." id="message" name="message" title="Write your message here." rows="5" cols="20"></textarea>
-      </form>
-      <div class="checkout_buttons">
-        <a href="index.html" class="cta cta_tall long">SUBMIT</a>
-      </div>
+        <form action="submit.php" method="post">
+            <input class="contact_form" placeholder="Full name" type="text" id="fullName" name="fullname" title="Full name">
+            <input class="contact_form contact_form_space" placeholder="Email" type="email" id="email" name="email" title="Email">
+            <input class="contact_form" placeholder="Subject" type="text" id="subject" name="subject" title="Subject">
+            <textarea class="place-text" placeholder="Write your message here." id="message" name="message" title="Write your message here." rows="5" cols="20"></textarea>
+            <div id="text-message"></div>
+            <button class="cta cta_tall long">SUBMIT</button>
+        </form>
     </div>
   </main>
   <footer>
@@ -53,5 +52,6 @@
       </ul>
     </nav>
   </footer>
+  <script src="/js/contact.js"></script>
   </body>
 </html>

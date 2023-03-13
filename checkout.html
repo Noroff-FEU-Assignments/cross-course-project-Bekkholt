@@ -31,7 +31,29 @@
     <h1>Checkout</h1>
       <div class="items">
         <img class="addams__specific" src="images/Square_Eyes_Cover6.jpeg" alt="The Addams Family - Halloween">
+
         <form action="submit.php" method="post">
+          <input type="text" placeholder="Name on card" id="fullName" class="checkout_form" name="fullname" title="Full name">
+          <input type="text" placeholder="Card number" id="card" class="checkout_form" name="cardnumber" title="Card number">
+        <div class="small_form">
+          <input type="text" placeholder="Year/Month" id="date" class="small_form small_form_left" name="experydate" title="Expery date">
+          <input type="text" placeholder="CCV" id="ccv" class="small_form small_form_right" name="CCV" title="CCV">
+        </div>
+        <div id="message"></div>
+    </div>
+    <p class="continue bold">or continue with</p>
+    
+    <button class="paypal_button">
+      <p class="paypal_button_text">PayPal</p>
+      <img class="paypal_button_logo" src="images/logos_paypal.png" alt="Paypal">
+    </button>
+<div class="checkout_buttons">
+  <button class="cta cta_tall long">PURCHASE </button>
+  <button class="cta cta_tall long">Continue shopping</button>
+</div>
+</form>
+
+        <!-- <form action="submit.php" method="post">
             <input type="text" placeholder="Name on card" class="checkout_form" name="fullname" title="Full name">
             <input type="number" placeholder="Card number" class="checkout_form" name="cardnumber" title="Card number">
           <div class="small_form">
@@ -49,7 +71,7 @@
     <div class="checkout_buttons">
       <a href="checkout-success.html" class="cta cta_tall long">PURCHASE</a>
       <a href="product-list.html" class="cta cta_tall long">Continue shopping</a>
-    </div>
+    </div> -->
   </main>
   <footer>
     <nav>
@@ -60,5 +82,6 @@
       </ul>
     </nav>
   </footer>
+  <script src="/js/checkout.js"></script>
   </body>
 </html>
