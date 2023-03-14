@@ -41,7 +41,7 @@ function submitForm(event) {
         && checkLength(card.value, 16)
         && validateDate(date.value)
         && validateCcv(ccv.value)) {
-        message.innerHTML += '<button class="cta cta_tall long">PURCHASE </button>';
+        window.location.href = "/checkout-success.html";
     } else {
         form.input.reset();
         form.message.reset();
@@ -61,17 +61,17 @@ function checkLength(value, len) {
     }
 }
 
-// function validateCard(card) {
-//     const regEx = /^(0[1-9]|1[0-2])\/?([0-9]{4}|[0-9]{2})$/;
-//     const patternMatches = regEx.test(card);
-//     return patternMatches;
-// }
+function validateCard(card) {
+    const regEx = /^(0[1-9]|1[0-2])\/?([0-9]{4}|[0-9]{2})$/;
+    const patternMatches = regEx.test(card);
+    return patternMatches;
+}
 
-// function validateDate(date) {
-//     const regEx = /^4[0-9]{12}(?:[0-9]{3})?$/;
-//     const patternMatches = regEx.test(date);
-//     return patternMatches;
-// }
+function validateDate(date) {
+    const regEx = /^(0[1-9]|1[0-2])\/?([0-9]{2})$/;
+    const patternMatches = regEx.test(date);
+    return patternMatches;
+}
 
 function validateCcv(ccv) {
     const regEx = /^[0-9]{3,4}$/;
