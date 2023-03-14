@@ -276,6 +276,7 @@ input, textarea  {
     margin: auto;
     width: fit-content;
     padding: var(--five) var(--none);
+    border: #000000;
 }
 
 .paypal_button_text {
