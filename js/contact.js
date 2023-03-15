@@ -38,8 +38,9 @@ function validateForm(event) {
 function submitForm(event) {
     event.preventDefault(); 
     if (checkLength(fullName.value, 1)
+        && validateEmail(email.value)
         && checkLength(subject.value, 5)
-        && validateEmail(email.value)) {
+        && checkLength(text.value, 5)) {
         message.innerHTML += '<div class="success">Success! Your info was submitted</div>';
     } else {
         form.input.reset();
