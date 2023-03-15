@@ -22,13 +22,13 @@ function validateForm(event) {
     }
 
     if (checkLength(subject.value, 5) === false) {
-        message.innerHTML += `<div class="no-requirement">Subject must have a minimum length of 5</div>`;
+        message.innerHTML += `<div class="no-requirement">Subject must have a minimum length of 5 letters</div>`;
     } else {
         message.innerHTML.display = "none";
     }
 
     if (checkLength(text.value, 5) === false) {
-        message.innerHTML += `<div class="no-requirement">Message must have a minimum length of 5</div>`;
+        message.innerHTML += `<div class="no-requirement">Message must have a minimum length of 5 letters</div>`;
     } else {
         message.innerHTML.display = "none";
     }
