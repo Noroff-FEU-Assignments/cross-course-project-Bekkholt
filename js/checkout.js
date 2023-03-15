@@ -10,7 +10,7 @@ function validateForm(event) {
     event.preventDefault();
 
     if (checkLength(fullName.value, 1) === false) {
-        message.innerHTML += `<div class="no-requirement">Full name required</div>`;
+        message.innerHTML += `<div class="no-requirement">Name on card is required</div>`;
     } else {
         message.innerHTML = "";
     }
@@ -22,7 +22,7 @@ function validateForm(event) {
     }
 
     if (validateDate(date.value) === false) {
-        message.innerHTML += `<div class="no-requirement">Expiry date must be valid</div>`;
+        message.innerHTML += `<div class="no-requirement">Month/Year must be a valid date</div>`;
     } else {
         message.innerHTML.display = "none";
     }
