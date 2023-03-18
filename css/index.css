@@ -338,6 +338,10 @@ footer {
     border-radius: 5px;
 }
 
+#searchbar {
+    align-self: var(--none);
+}
+
 @media (min-width: 200px) and (max-width: 400px) {
     .collections {
         display: flex;

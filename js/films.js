@@ -67,6 +67,7 @@ export function getFilmsIncluding(searchText) {
         const 
         const 
         const 
+        return
     }
     return results;
 }
