@@ -49,25 +49,12 @@ export const films = [
     featuring: ``,},
 ]
 
-// export function getFilmsIncluding(searchText) {
-
-//     const results = films.filter(function(film) {
-//         const filmTitle = film.title.toLowerCase();
-//         const text = searchText.toLowerCase();
-//         const including = filmTitle.includes(text);
-//         return including;
-//     });
-
-//     return results;
-// }
-
-
 export function getFilmsIncluding(searchText) {
-    const results = films.filter(function(films)) {
-        const 
-        const 
-        const 
-        return
-    }
+    const results = films.filter(function(film) {
+        const filmTitle = film.title.toLowerCase();
+        const inputText = searchText.toLowerCase();
+        const including = filmTitle.includes(inputText);
+        return including;
+    });
     return results;
 }
