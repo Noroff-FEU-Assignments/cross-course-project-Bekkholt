@@ -99,6 +99,7 @@ form {
     text-shadow: none;
     border: none;
     box-shadow: var(--shadow) var(--beige);
+    margin-bottom: var(--ten);
 }
 
 .cta_tall {
@@ -300,6 +301,7 @@ input, textarea  {
 
 .collections {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 

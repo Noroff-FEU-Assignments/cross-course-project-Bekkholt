@@ -49,7 +49,24 @@ export const films = [
     featuring: ``,},
 ]
 
-export function getFilmsIncluding(text) {
-    const results = films.filter(film => film.title.includes(text));
+// export function getFilmsIncluding(searchText) {
+
+//     const results = films.filter(function(film) {
+//         const filmTitle = film.title.toLowerCase();
+//         const text = searchText.toLowerCase();
+//         const including = filmTitle.includes(text);
+//         return including;
+//     });
+
+//     return results;
+// }
+
+
+export function getFilmsIncluding(searchText) {
+    const results = films.filter(function(films)) {
+        const 
+        const 
+        const 
+    }
     return results;
 }

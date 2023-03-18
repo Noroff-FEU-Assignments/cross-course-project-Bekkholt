@@ -15,14 +15,20 @@ function handleKeyDown(event){
 
 function populateResults(results){
     searchResult.innerHTML ="";
-    for(const result of results) {
-        const resultHtml = `
-        <div class="products">
+    const noResult = results.length === 0;
+    
+    if (noResult) {
+        searchResult.innerHTML = `<p>No results found<p>`;
+    } else {
+        for(const result of results) {
+            const resultHtml = `
+            <div class="products">
             <a href="product-specific.html">
-                <img class="hobbs" src="${result.posterSrc}" alt="${result.title}">
+            <img class="hobbs" src="${result.posterSrc}" alt="${result.title}">
             </a>
             <a href="checkout.html" class="cta price">$3.99 +</a>
-        </div>`
-        searchResult.innerHTML += resultHtml;
+            </div>`
+            searchResult.innerHTML += resultHtml;
+        }
     }
 }

@@ -2,34 +2,15 @@ import { getFilmsIncluding } from "./films.js";
 
 const products = document.querySelector(".items");
 
-const detailUrl = "/product-specific.html" + films.title;
 
-async function getFilmsIncluding(){
-    try {
-        detailContainer.innerHTML = `<div class="loader"></div>`
-        const response = await fetch(detailUrl);
-        const films = await response.json();
-        
-        document.title = films.title;
-
-        createHtml(films);
-        
-    } catch (error) {
-        detailContainer.innerHTML = message("error", error);
-    }
-}
-
-getFilmsIncluding();
-
-function getFilmsIncluding(films) {
     items.innerHTML = `<h1>${films.title}</h1>
     <div class="items">
     <img class="addams__specific" ${films.posterSrc} alt="The Addams Family - Halloween">
-  <div class="checkout_buttons">
+    <div class="checkout_buttons">
     <a href="checkout.html" class="cta cta_tall">Buy now $3.99</a>
-  </div>
-  </div>
-  <div>
+    </div>
+    </div>
+    <div>
     <p>
       ${films.description}
     </p>
@@ -45,10 +26,9 @@ function getFilmsIncluding(films) {
     <p class="product_text">
       ${films.featuring}
     </p>
-  </div>;`
-    }
+    </div>;`
 
-//     const detailContainer = document.querySelector(".details");
+// const detailContainer = document.querySelector(".details");
 // const queryString = document.location.search;
 // const params = new URLSearchParams(queryString);
 
