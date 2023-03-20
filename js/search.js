@@ -9,11 +9,11 @@ function handleKeyDown(event){
     if(event.key === 'Enter'){
         event.preventDefault();
         const results = getFilmsIncluding(searchbar.value);
-        populateResults(results);
+        showResults(results);
     }
 }
 
-function populateResults(results){
+function showResults(results){
     searchResult.innerHTML ="";
     const noResult = results.length === 0;
     
