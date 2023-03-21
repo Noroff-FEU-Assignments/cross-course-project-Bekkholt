@@ -154,7 +154,7 @@ ul {
     flex-direction: row;
 }
 
-.addams__specific {
+.poster {
     max-width: var(--halfpercent);
     max-height: var(--halfpercent);
     padding: 95px;
@@ -373,7 +373,7 @@ footer {
 
 @media (min-width: 600px) and (max-width: 999px) {
 
-    .addams__specific {
+    .poster {
         width: 250px;
     }
 
@@ -416,7 +416,7 @@ footer {
 
 @media (min-width: 1000px) {
 
-    .addams__specific {
+    .poster {
         width: 250px;
     }
 

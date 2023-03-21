@@ -16,7 +16,7 @@ productSpecific(items, film);
 function productSpecific(items, film) { 
   items.innerHTML = `<h1>${film.title}</h1>
   <div class="items">
-  <img class="addams__specific" src="${film.posterSrc}" alt="${film.alt}">
+  <img class="poster" src="${film.posterSrc}" alt="${film.alt}">
   <div class="checkout_buttons">
   <a href="checkout.html?id=${film.id}" class="cta cta_tall">Buy now $3.99</a>
   </div>
