@@ -6,6 +6,11 @@ const ccv = document.querySelector("#ccv");
 const message = document.querySelector("#message")
 const button = document.querySelector("button");
 
+
+const queryString = document.location.search;
+const params = new URLSearchParams(queryString);
+let id = params.get("id");
+
 function validateForm(event) {
     event.preventDefault();
 
@@ -41,12 +46,16 @@ function submitForm(event) {
         && checkLength(card.value, 16)
         && validateDate(date.value)
         && validateCcv(ccv.value)) {
-        window.location.href = "/checkout-success.html";
+        checkoutSuccess()
     } else {
         form.input.reset();
         form.message.reset();
     }
     
+}
+
+function checkoutSuccess() {
+    window.location.href = `/checkout-success.html?id=${id}`;
 }
 
 form.addEventListener("submit", validateForm);
