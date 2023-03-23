@@ -20,7 +20,8 @@ function showResults(results){
     if (noResult) {
         searchResult.innerHTML = `<p>No results found<p>`;
     } else {
-        for(const result of results) {
+        for(let i = 0; i < results.length; i++) {
+            const result = results[i];
             const resultHtml = `
             <div class="products">
             <a href="product-specific.html">

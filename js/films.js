@@ -72,6 +72,29 @@ export const films = [
     },
 ]
 
+export const genre = [
+
+    {genreName: `Popular collections`,
+    id: 20,
+    },
+
+    {genreName: `Action`,
+    id: 21,
+    },
+
+    {genreName: `Family`,
+    id: 22,
+    },
+
+    {genreName: `Thriller`,
+    id:23,
+    },
+
+    {genreName: `Horror`,
+    id: 24,
+    },
+]
+
 export function getFilmsIncluding(searchText) {
     const results = films.filter(function(film) {
         const filmTitle = film.title.toLowerCase();

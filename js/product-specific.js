@@ -1,4 +1,5 @@
 import { getFilmByID } from "./films.js";
+import { genre } from "./films.js";
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
@@ -38,4 +39,4 @@ function productSpecific(items, film) {
     ${film.featuring}
   </p>
   </div>`
-}
+};
