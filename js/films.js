@@ -1,7 +1,7 @@
 export const films = [
     {id: 0,
     title: `The Addams Family`,
-    posterSrc: `images/Square_Eyes_Cover6.jpeg`,
+    posterSrc: `/images/Square_Eyes_Cover6.jpeg`,
     description: `The eccentrically macabre family moves to a bland surburb where Wednesday Addams friendship with the daughter of a hostile and conformist local reality show host exacerbates conflict between the families.`,
     directedBy: `Greg Tiernan, Conrad Vernon`,
     featuring: `Oscar Isaac, Charlize Theron and Chloë Grace Moretz`,
@@ -76,6 +76,7 @@ export const genre = [
 
     {genreName: `This is halloween`,
     id: 20,
+    films: [2, 3,]
     },
 
     {genreName: `Action`,
