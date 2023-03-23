@@ -74,12 +74,13 @@ export const films = [
 
 export const genre = [
 
-    {genreName: `Popular collections`,
+    {genreName: `This is halloween`,
     id: 20,
     },
 
     {genreName: `Action`,
     id: 21,
+
     },
 
     {genreName: `Family`,
@@ -92,6 +93,14 @@ export const genre = [
 
     {genreName: `Horror`,
     id: 24,
+    },
+
+    {genreName: `Girls just wanna have fun`,
+    id: 25,
+    },
+
+    {genreName: `Where dreams come true`,
+    id: 26,
     },
 ]
 
