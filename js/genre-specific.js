@@ -24,7 +24,7 @@ for(let i = 0; i < genre.length; i++){
             <a href="product-specific.html?id=${film.id}">
             <img class="hobbs" src="${film.posterSrc}" alt="${film.title}">
             </a>
-            <a href="checkout.html" class="cta price">$3.99 +</a>
+            <a href="checkout.html?id=${film.id}" class="cta price">$3.99 +</a>
             </div>`
             }
 
