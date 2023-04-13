@@ -4,7 +4,6 @@ const productBase = "products/";
 
 const filmsURL = apiBase + woocommerceBase + productBase;
 
-
 // gets products
 async function getFilms() {
     const response = await fetch(filmsURL);
@@ -29,6 +28,7 @@ function createFilmHTML(film) {
 
     // for each of the images in this response
     for (let i = 0; i < film.images.length; i++) {
+
         const imgData = film.images[i];
 
         //create one image tag
@@ -43,6 +43,10 @@ function createFilmHTML(film) {
         // add that inside "create the div, add the class product to that div, add the id to that div"
         productContainer.append(img)
     }
+
+    const price = document.createElement("p");
+    price.innerText = film.prices.price;
+    productContainer.append(price);
 
     container.append(productContainer)
 }
@@ -64,7 +68,7 @@ filmPage()
 
 
 
-// const url = "https://noroffapi.bekkholt.no/wp-json/wp/v2/media";
+// const url = "https://noroffapi.bekkholt.no//wp-json/wc/store/products/";
 // const resultsContainer = document.querySelector(".results");
 
 
@@ -80,8 +84,8 @@ filmPage()
 //             films.forEach(function(films) {
 //                 resultsContainer.innerHTML += `<div class="genre">
 //                 <div class="products">
-//                 <a href="product-specific.html?id=0"><img class="addams" src="${films.source_url}" alt="${films.alt_text}"></a>
-//                 <a href="checkout.html?id=0" class="cta price"></a>
+//                 <a href="product-specific.html?id=0"><img class="addams" src="${films.images.src}" alt="${films.images.alt}"></a>
+//                 <a href="checkout.html?id=0" class="${films.prices.regular_price}"></a>
 //                 </div>
 //                 </div>`;
 //             });
