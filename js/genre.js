@@ -13,3 +13,22 @@ for(let i = 0; i < indexes.length; i++){
         }
     }
 }
+
+
+
+const url = "https://noroffapi.bekkholt.no/wp-json/wp/v2/product";
+
+
+async function callApi(){
+    try {
+            const response = await fetch(url);
+            const json = await response.json();
+
+            console.log(json)
+
+    } catch (error) {
+            console.error('failed');
+    }
+}
+
+callApi(url);
