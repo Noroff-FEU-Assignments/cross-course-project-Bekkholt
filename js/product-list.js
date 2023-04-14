@@ -26,7 +26,6 @@ function createFilmHTML(film) {
 
         img.src = imgData.src;
         img.alt = imgData.alt;
-        img.href = `<a href="product-specific.html?id=0"></a>`;
 
         img.classList.add("addams");
         
@@ -55,8 +54,6 @@ async function filmPage() {
 }
 
 filmPage()
-
-
 
 // const url = "https://noroffapi.bekkholt.no//wp-json/wc/store/products/";
 // const resultsContainer = document.querySelector(".results");
