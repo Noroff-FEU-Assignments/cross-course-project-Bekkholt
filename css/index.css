@@ -72,12 +72,21 @@ form {
     justify-content: space-evenly;
 }
 
+.results {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .products {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     margin-bottom: var(--thirty);
+    margin-left: var(--thirty);
+    margin-right: var(--thirty);
 }
 
 .hobbs, .godzilla, .batman,
