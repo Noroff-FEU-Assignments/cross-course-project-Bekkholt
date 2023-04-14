@@ -4,7 +4,6 @@ const productBase = "products/";
 
 const filmsURL = apiBase + woocommerceBase + productBase;
 
-// gets products
 async function getFilms() {
     const response = await fetch(filmsURL);
 
@@ -13,40 +12,32 @@ async function getFilms() {
     return films
 }
 
-// showing the data (this instead of the `div class= etc.` innerHTML)
 function createFilmHTML(film) {
     const container = document.querySelector(".results");
-
-    // create the div
     const productContainer = document.createElement("div");
 
-    //add the class product to that div
-    productContainer.classList.add("product");
-
-    // add the id to that div
+    
+    productContainer.classList.add("products");
     productContainer.id = film.id;
 
-    // for each of the images in this response
     for (let i = 0; i < film.images.length; i++) {
-
         const imgData = film.images[i];
-
-        //create one image tag
         const img = document.createElement("img");
 
-        //set the source
         img.src = imgData.src;
-
-        //set the alt text
         img.alt = imgData.alt;
+        img.href = `<a href="product-specific.html?id=0"></a>`;
 
-        // add that inside "create the div, add the class product to that div, add the id to that div"
+        img.classList.add("addams");
+        
         productContainer.append(img)
     }
 
     const price = document.createElement("p");
     price.innerText = film.prices.price;
     productContainer.append(price);
+
+    price.classList.add("cta");
 
     container.append(productContainer)
 }
@@ -58,7 +49,6 @@ function createProductsHTML(films) {
     }
 }
 
-// narrativ function
 async function filmPage() {
     const films = await getFilms()
     createProductsHTML(films)
