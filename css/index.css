@@ -157,7 +157,7 @@ ul a {
     font-family: 'DM Sans', sans-serif;
     color: var(--black);
     text-shadow: var(--shadow) var(--beige);
-    text-decoration: none;
+    text-decoration: var(--none);
 }
 
 ul {

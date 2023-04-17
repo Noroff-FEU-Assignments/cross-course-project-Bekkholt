@@ -23,16 +23,24 @@ function createFilmHTML(film) {
 
     for (let i = 0; i < film.images.length; i++) {
         const imgData = film.images[i];
-        const img = document.createElement("img");
+
+        const a = document.createElement('a');
+        const imageURL = "product-specific.html?id=";
+        a.href = imageURL + `${film.id}`;
+        
+        const img = a.appendChild(document.createElement('img'));
         img.src = imgData.src;
         img.alt = imgData.alt;
-
         img.classList.add("addams");
 
-        productContainer.append(img);
+        productContainer.append(a);
     }
 
-    const price = document.createElement("p");
+    const a = document.createElement(`a`);
+    const buttonURL = "checkout.html?id=";
+    a.href = buttonURL + `${film.id}`;
+
+    const price = a.appendChild(document.createElement("p"));
     const basePrice = film.prices.price;
     const prefix = film.prices.currency_prefix;
     
@@ -43,7 +51,7 @@ function createFilmHTML(film) {
     const resultPrice = start + "." + stop;
     
     price.innerText = resultPrice;
-    productContainer.append(price);
+    productContainer.append(a);
 
     price.classList.add("cta");
 
