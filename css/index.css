@@ -160,6 +160,10 @@ ul a {
     text-decoration: var(--none);
 }
 
+a {
+    text-decoration: var(--none);
+}
+
 ul {
     list-style: none;
     display: flex;
