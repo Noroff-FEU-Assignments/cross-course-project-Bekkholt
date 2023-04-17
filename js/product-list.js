@@ -9,6 +9,8 @@ async function getFilms() {
 
     const films = await response.json();
 
+    films.sort((a, b) => a.name.localeCompare(b.name));
+
     return films
 }
 
@@ -16,24 +18,31 @@ function createFilmHTML(film) {
     const container = document.querySelector(".results");
     const productContainer = document.createElement("div");
 
-    
     productContainer.classList.add("products");
     productContainer.id = film.id;
 
     for (let i = 0; i < film.images.length; i++) {
         const imgData = film.images[i];
         const img = document.createElement("img");
-
         img.src = imgData.src;
         img.alt = imgData.alt;
 
         img.classList.add("addams");
-        
-        productContainer.append(img)
+
+        productContainer.append(img);
     }
 
     const price = document.createElement("p");
-    price.innerText = film.prices.price;
+    const basePrice = film.prices.price;
+    const prefix = film.prices.currency_prefix;
+    
+    const newPrice = prefix + basePrice;
+    const start = newPrice.slice(0,3);
+    const stop = newPrice.slice(3);
+
+    const resultPrice = start + "." + stop;
+    
+    price.innerText = resultPrice;
     productContainer.append(price);
 
     price.classList.add("cta");
