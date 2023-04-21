@@ -24,10 +24,10 @@ function showResults(results){
             const result = results[i];
             const resultHtml = `
             <div class="products">
-            <a href="product-specific.html">
+            <a href="product-specific.html?id=${result.id}">
             <img class="hobbs" src="${result.posterSrc}" alt="${result.title}">
             </a>
-            <a href="checkout.html" class="cta price">$3.99 +</a>
+            <a href="checkout.html" class="cta price">$3.99</a>
             </div>`
             searchResult.innerHTML += resultHtml;
         }

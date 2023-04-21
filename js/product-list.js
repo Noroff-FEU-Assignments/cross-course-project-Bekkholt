@@ -1,8 +1,8 @@
-const apiBase = "https://noroffapi.bekkholt.no/";
-const woocommerceBase = "/wp-json/wc/store/";
-const productBase = "products/";
+const api = "https://noroffapi.bekkholt.no/";
+const woocommerce = "/wp-json/wc/store/";
+const products = "products/";
 
-const filmsURL = apiBase + woocommerceBase + productBase;
+const filmsURL = api + woocommerce + products;
 
 async function getFilms() {
     const response = await fetch(filmsURL);
