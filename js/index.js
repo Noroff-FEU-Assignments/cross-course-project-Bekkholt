@@ -56,8 +56,7 @@ export function createFilmHTML(film, productContainer) {
 
 function createProductsHTML(films) {
 
-
-    const container = document.querySelector(".items");
+    const container = document.getElementById('genreContainer');
 
     for (let i = 0; i < categoryList.length; i++) {
         const category = categoryList[i];
