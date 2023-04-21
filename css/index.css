@@ -41,7 +41,8 @@ h1, h2 {
     font-size: x-large;
     text-align: center;
     font-weight: bold;
-    text-shadow: var(--shadow) var(--beige)
+    text-shadow: var(--shadow) var(--beige);
+    color: var(--black);
 }
 
 p {
