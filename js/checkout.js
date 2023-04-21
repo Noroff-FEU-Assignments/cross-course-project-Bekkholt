@@ -37,7 +37,6 @@ function validateForm(event) {
     } else {
         message.innerHTML.display = "none";
     }
-
 }
 
 function submitForm(event) {
@@ -51,7 +50,6 @@ function submitForm(event) {
         form.input.reset();
         form.message.reset();
     }
-    
 }
 
 function checkoutSuccess() {

@@ -71,32 +71,3 @@ async function filmPage() {
 }
 
 filmPage()
-
-// const url = "https://noroffapi.bekkholt.no//wp-json/wc/store/products/";
-// const resultsContainer = document.querySelector(".results");
-
-
-// async function callApi(){
-//     try {
-//             const response = await fetch(url);
-//             const json = await response.json();
-
-//             const films = json;
-
-//             resultsContainer.innterHTML="";
-
-//             films.forEach(function(films) {
-//                 resultsContainer.innerHTML += `<div class="genre">
-//                 <div class="products">
-//                 <a href="product-specific.html?id=0"><img class="addams" src="${films.images.src}" alt="${films.images.alt}"></a>
-//                 <a href="checkout.html?id=0" class="${films.prices.regular_price}"></a>
-//                 </div>
-//                 </div>`;
-//             });
-
-//     } catch (error) {
-//             console.error('failed');
-//     }
-// }
-
-// callApi(url);
