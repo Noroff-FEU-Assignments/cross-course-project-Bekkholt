@@ -17,10 +17,8 @@ async function getFilms() {
     return films
 }
 const featuredFilms = await getFilms()
-console.log(featuredFilms);
 
 const featuredContainer = document.getElementById("featuredContainer");
-console.log(featuredContainer)
 for (let i = 0; i < featuredFilms.length; i++) {
     const featuredFilm = featuredFilms[i];
     createFilmHTML(featuredFilm, featuredContainer);
