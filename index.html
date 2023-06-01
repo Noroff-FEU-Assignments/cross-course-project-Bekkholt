@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Square Eyes | Home</title>
+    <meta name="description" content="Square Eyes - Connecting film lovers.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/index.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <!-- Hotjar Tracking Code for my site -->
+<script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:3390233,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+  </head>
+  <body>
+    <header>
+        <div class="header">
+          <a href="index.html"><img class="logo" src="images/SquareEyes_Logo.png" alt="Square Eyes logo"></a>
+          <div>
+          <form class="form">
+                <input id="searchbar" title="search" type="text" class="input long" placeholder="What do you want to buy?"/>
+              </div>
+            </form>
+              <ul class="results-list" id="list"></ul>
+          <a href="product-list.html" class="cta">All films</a>
+        </div>
+    </header>
+  <main>
+    <div class="collections" id="searchResult"></div>
+    <a href="/collections.html" class="index genreButton">Popular collections</a>
+    <div class="collections">
+      <div class="products">
+        <a href="genre.html?id=21">
+          <img class="collection" src="images/Buy_this_is_halloween_collection.png" alt="This is halloween collection">
+        </a>
+      </div>
+      <div class="products">
+        <a href="genre.html?id=20">
+          <img class="collection" src="images/Buy_girls_just_wanna_have_fun_collection.png" alt="Girls just wanna have fun collection">
+        </a>
+      </div>
+      <div class="products">
+        <a href="genre.html?id=19">
+          <img class="collection hide_small" src="images/Where_dreams_come_true_collection.png" alt="Where dreams come true collection">
+        </a>
+      </div>
+    </div>
+   <h2 class="index">Featured</h2>
+    <div id="featuredContainer"></div>
+    <div id="genreContainer" class="items">
+      <div class="products">
+      </div>
+    </div>
+  </main>
+  <footer>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script type="module" src="/js/search.js"></script>
+  <script type="module" src="/js/index.js"></script>
+  <script type="module" src="/js/featured.js"></script>
+</html>
